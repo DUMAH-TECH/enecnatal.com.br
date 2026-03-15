@@ -13,6 +13,11 @@ const openSans = Open_Sans({ subsets: ['latin'], variable: '--font-open-sans' })
 export const metadata: Metadata = {
   title: 'ENEC – Escola Natalense de Educação e Cultura',
   description: 'Escola Natalense de Educação e Cultura em Natal/RN. Educação Infantil e Ensino Fundamental com qualidade, estrutura e carinho. Matrículas 2026 abertas.',
+  icons: {
+    icon: '/icone-enec-pagina.png',
+    shortcut: '/icone-enec-pagina.png',
+    apple: '/icone-enec-pagina.png',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
