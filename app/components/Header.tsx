@@ -41,7 +41,15 @@ const aEnecItems = [
   },
 ]
 
-const nav = [
+type NavItem = {
+  id: string
+  label: string
+  slug: string
+  type: string
+  children?: { slug: string; label: string; external?: boolean }[]
+}
+
+const nav: NavItem[] = [
   { id: 'home', label: 'Página Inicial', slug: '/', type: 'link' },
   { id: 'a-enec', label: 'A ENEC', slug: '/a-enec', type: 'link' },
   { id: 'servicos', label: 'Serviços', slug: '/servicos', type: 'link' },
